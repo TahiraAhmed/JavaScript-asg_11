@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Lab 11 - Task 7</title>
+</head>
+<body>
+<!-- chapter 55 & 51
+<style>
+    .margin { margin: 70px 0 0 0 }
+</style>-->
+<div id="div1">
+<img src="movie.jpg" width="300" height="210" id="image">
+<h4 id="heading1">AUDIO & VIDEO</h4>
+<h2>Movie Directors Vs. Producers: What's the Difference?</h2>
+    <h4 id="heading2">POSTED 02/19/2015 | 2 minutes ago</h4>
+    <p id="para">When the winner for Best Picture is announced, who goes up to accept the Oscar - the film' producer or director? It's the producer. For
+    instance, if "Selma" wins Best Picture Sunday, director Ava Du Vernay won't accept the award. The producers of the film - Oprah Winfrey and others
+    - ...<a href="JavaScript:void(0);" onclick="expand();">Read More</a></p>
+</div>
+<script>
+    document.getElementById("image").style.cssFloat= "left";
+    document.getElementById("image").style.margin = "0 30px 0 0";
+    document.getElementById("div1").style.margin = "70px 0 0 0";
+    document.getElementById("div1").style.borderColor = "black";
+    document.getElementById("heading1").style.color = "orange";
+    document.getElementById("heading2").style.color = "grey";
+    document.getElementById("para").style.width = "860px";
+
+    function expand() {
+        var fullPara = "When the winner for Best Picture is announced, who goes up to accept the Oscar - the film' producer or director?" +
+                " It's the producer. For instance, if 'Selma' wins Best Picture Sunday, director Ava Du Vernay won't accept the award." +
+                " The producers of the film - Oprah Winfrey and others - will go home with the coveted gold statuette. <br> <br>The Academy Awards have" +
+                "presented the category this way since 1929. Some people who love cinema might ask: Isn't the director ultimately responsible for" +
+                "making a film? And there we find  the crux of this article: What's the difference between film directors and film producers?" +
+                "<br><br> Erika Olson writes that directors are on set each day and are in charge of the overall artistic vision of the movie, whereas producers" +
+                "take care of business and logistics. When you dive deeper, it's more complicated than that.";
+        document.getElementById("para").innerHTML = fullPara;
+    }
+
+  //  document.getElementById("div1").style.border.color = "black";
+    </script>
+</body>
+</html>

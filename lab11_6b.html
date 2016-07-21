@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Lab 11 - Task 6b</title>
+</head>
+<body>
+<!-- chapter 55 + google -->
+<style>
+    .color {color:steelblue; }
+    .style {weight:250px; height:250px; margin: 50px; border-color: steelblue; border-width: 2px;}
+    .text1 {margin: 0px 70px 0px 70px ; }
+    .text2 {margin: 0px 70px 0px 80px ; }
+    .text3 {margin: 0px 70px 0px 90px ; }
+    .text4 {margin: 0px 80px 0px 125px ; }
+</style>
+
+<h1 class="color">Mobile Phone Lookup</h1>
+<img src="images\iphone6+.jpg" class="style" onmouseover="this.style.width='280px'; this.style.height='420px';" onMouseout="
+this.style.width='149px'; this.style.height='250px';">
+<img src="images\galaxys6+.jpg" class="style" id="image2" onmouseover="enlarge2();" onmouseout="reduce2();">
+<img src="images\v.jpg" class="style" id="image3" onmouseover="enlarge3();" onmouseout="reduce3();">
+<img src="images\huawei.jpg" class="style" id="image4" onmouseover="enlarge4();" onmouseout="reduce4();">
+
+<br>
+<span class="text1 color">
+    iPhone6Plus.gif
+    </span>
+<span class="text2 color">
+    GalaxyS6EdgePlus.gif
+</span>
+<span class="text3 color">
+    V10.gif
+</span>
+<span class="text4 color">
+    HuaweiP8.gif
+</span>
+<script>
+ //   function enlarge1() {
+   //     document.getElementById("image1").style.height='450px';
+    //    document.getElementById("image1").style.width='250px';
+    //}
+    function enlarge2() {
+        document.getElementById("image2").style.height = '450px';
+        document.getElementById("image2").style.width = '250px';
+    }
+    function enlarge3() {
+        document.getElementById("image3").style.height = '450px';
+        document.getElementById("image3").style.width = '250px';
+    }
+    function enlarge4() {
+        document.getElementById("image4").style.height = '450px';
+        document.getElementById("image4").style.width = '250px';
+    }
+ //   function reduce1() {
+   //     document.getElementById("image1").style.height='250px';
+     //   document.getElementById("image1").style.width='149px';
+    //}
+    function reduce2() {
+        document.getElementById("image2").style.height='250px';
+        document.getElementById("image2").style.width='153px';
+    }
+    function reduce3() {
+        document.getElementById("image3").style.height='250px';
+        document.getElementById("image3").style.width='148px';
+    }
+    function reduce4() {
+        document.getElementById("image4").style.height='250px';
+        document.getElementById("image4").style.width='159px';
+    }
+
+    </script>
+</body>
+</html>
